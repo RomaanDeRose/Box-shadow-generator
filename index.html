@@ -9,8 +9,8 @@
   <body>
     <h1>Create your <span>box-shadow</span></h1>
     <main class="container">
-      <div class="box-background">
-        <div class="box-shadow">
+      <div class="box-background" id="box-background">
+        <div class="box-shadow" id="box-shadow">
           <p id="code-box-shadow"></p>
         </div>
       </div>
@@ -30,11 +30,11 @@
           <input
             type="range"
             name=""
-            id="horizontal"
+            id="x-shadow"
             min="-200"
             max="200"
-            value="10"
             step="1"
+            value="10"
           />
         </div>
         <div class="input">
@@ -42,7 +42,7 @@
           <input
             type="range"
             name=""
-            id="vertical"
+            id="y-shadow"
             min="-200"
             max="200"
             value="10"
@@ -54,7 +54,7 @@
           <input
             type="range"
             name=""
-            id="blur"
+            id="blur-shadow"
             min="0"
             max="100"
             value="2"
@@ -66,8 +66,8 @@
           <input
             type="range"
             name=""
-            id="spread"
-            min="0"
+            id="spread-shadow"
+            min="-100"
             max="200"
             value="1"
             step="1"
@@ -75,8 +75,8 @@
         </div>
         <div class="input">
           <label for="color">Color Shadow</label>
-          <input type="color" name="" id="color" />
-          <label for="opacity">Opacity</label>
+          <input type="color" name="" id="color-shadow" />
+          <label for="opacity-shadow">Opacity</label>
           <input
             type="range"
             name=""
