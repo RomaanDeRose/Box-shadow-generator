@@ -84,6 +84,7 @@ codeShadow.textContent = actualizeCodeShadow(
 shadowInputs.forEach((input) => {
   input.addEventListener("input", (e) => {
     const textValue = input.previousElementSibling.children[1];
+
     x = shadowX.value;
     y = shadowY.value;
     blurShadow = shadowBlur.value;
@@ -93,6 +94,10 @@ shadowInputs.forEach((input) => {
 
     input.getAttribute("type") === "range"
       ? (textValue.textContent = e.target.value + "px")
+      : null;
+
+    input.getAttribute("id") === "opacity-shadow"
+      ? (textValue.textContent = e.target.value)
       : null;
 
     actualizeShadow(
