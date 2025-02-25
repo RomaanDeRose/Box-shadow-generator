@@ -13,6 +13,9 @@
     <title>Box Shadow Generator</title>
   </head>
   <body>
+    <div class="alert-copy">
+      <p>¡Copiado!</p>
+    </div>
     <h1>Create your <span>box-shadow</span></h1>
     <main class="container">
       <div class="box-background" id="box-background">
@@ -26,7 +29,7 @@
           <input type="color" name="" id="background-box" />
         </div>
         <div class="inputs">
-          <label for="">Background Mini Box</label>
+          <label for="">Box color</label>
           <input type="color" name="" id="background-shadow-box" />
         </div>
       </div>
@@ -37,6 +40,7 @@
             <p class="value">10px</p>
           </div>
           <input
+            class="input-range"
             type="range"
             name=""
             id="x-shadow"
@@ -52,6 +56,7 @@
             <p class="value">10px</p>
           </div>
           <input
+            class="input-range"
             type="range"
             name=""
             id="y-shadow"
@@ -64,15 +69,16 @@
         <div class="input">
           <div class="text">
             <label for="blur">Blur Radius</label>
-            <p class="value">2px</p>
+            <p class="value">8px</p>
           </div>
           <input
+            class="input-range"
             type="range"
             name=""
             id="blur-shadow"
             min="0"
             max="100"
-            value="5"
+            value="8"
             step="1"
           />
         </div>
@@ -82,6 +88,7 @@
             <p class="value">0px</p>
           </div>
           <input
+            class="input-range"
             type="range"
             name=""
             id="spread-shadow"
@@ -93,15 +100,15 @@
         </div>
         <div class="input">
           <label for="color">Color Shadow</label>
-          <input type="color" name="" id="color-shadow" />
+          <input class="input-range" type="color" name="" id="color-shadow" />
         </div>
         <div class="input">
           <div class="text">
             <label for="opacity">Opacity</label>
             <p class="value">0.75</p>
           </div>
-          <input type="range" name="" id="opacity-shadow" min="0" max="1"
-          value="1" step="0.01"
+          <input class="input-range" type="range" name="" id="opacity-shadow"
+          min="0" max="1" value="0.75" step="0.01"
         </div>
       </div>
     </main>
